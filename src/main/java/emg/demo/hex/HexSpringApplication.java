@@ -1,4 +1,4 @@
-package emg.demo.hex.task;
+package emg.demo.hex;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

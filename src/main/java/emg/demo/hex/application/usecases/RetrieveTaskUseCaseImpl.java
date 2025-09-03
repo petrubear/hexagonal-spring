@@ -21,6 +21,6 @@ public class RetrieveTaskUseCaseImpl implements RetrieveTaskUseCase {
 
     @Override
     public List<Task> getAllTasks() {
-        return this.getAllTasks();
+        return this.taskRepositoryPort.findAll();
     }
 }

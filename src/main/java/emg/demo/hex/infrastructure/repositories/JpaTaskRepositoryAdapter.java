@@ -1,8 +1,9 @@
-package emg.demo.hex.infraestructure.repositories;
+package emg.demo.hex.infrastructure.repositories;
 
 import emg.demo.hex.domain.models.Task;
 import emg.demo.hex.domain.ports.out.TaskRepositoryPort;
-import emg.demo.hex.infraestructure.entities.TaskEntity;
+import emg.demo.hex.infrastructure.entities.TaskEntity;
+
 import org.springframework.stereotype.Component;
 
 import java.util.List;

@@ -4,10 +4,10 @@ import emg.demo.hex.domain.models.Task;
 import emg.demo.hex.domain.ports.in.CreateTaskUseCase;
 import emg.demo.hex.domain.ports.out.TaskRepositoryPort;
 
-public class CreateTaskUseCasImpl implements CreateTaskUseCase {
+public class CreateTaskUseCaseImpl implements CreateTaskUseCase {
     private final TaskRepositoryPort taskRepositoryPort;
 
-    public CreateTaskUseCasImpl(TaskRepositoryPort taskRepositoryPort) {
+    public CreateTaskUseCaseImpl(TaskRepositoryPort taskRepositoryPort) {
         this.taskRepositoryPort = taskRepositoryPort;
     }
 

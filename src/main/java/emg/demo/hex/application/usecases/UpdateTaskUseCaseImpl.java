@@ -1,5 +1,6 @@
 package emg.demo.hex.application.usecases;
 
+import java.util.Objects;
 import java.util.Optional;
 
 import emg.demo.hex.domain.models.Task;
@@ -15,6 +16,9 @@ public class UpdateTaskUseCaseImpl implements UpdateTaskUseCase {
 
     @Override
     public Optional<Task> updateTask(Long taskId, Task updatedTask) {
-        return this.taskRepositoryPort.update(updatedTask);
+        if (Objects.equals(updatedTask.id(), taskId)) {
+            return this.taskRepositoryPort.update(updatedTask);
+        }
+        return Optional.empty();
     }
 }

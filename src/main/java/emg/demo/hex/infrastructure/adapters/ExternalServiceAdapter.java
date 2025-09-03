@@ -1,4 +1,4 @@
-package emg.demo.hex.infraestructure.adapters;
+package emg.demo.hex.infrastructure.adapters;
 
 import emg.demo.hex.domain.models.AdditionalTaskInfo;
 import emg.demo.hex.domain.ports.out.ExternalServicePort;
@@ -37,7 +37,7 @@ public class ExternalServiceAdapter implements ExternalServicePort {
 
     private static class JsonPlaceHolderTodo {
         private Long id;
-        private String userId;
+        private Long userId;
 
         public Long getId() {
             return id;
@@ -47,11 +47,11 @@ public class ExternalServiceAdapter implements ExternalServicePort {
             this.id = id;
         }
 
-        public String getUserId() {
+        public Long getUserId() {
             return userId;
         }
 
-        public void setUserId(String userId) {
+        public void setUserId(Long userId) {
             this.userId = userId;
         }
     }
